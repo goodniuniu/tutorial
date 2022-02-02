@@ -1,11 +1,11 @@
-FROM ubunt:14.04
+FROM ubuntu:14.04
 ENV DEBIAN_FRONTEND nointeractive
 RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y nmap
 RUN apt-get install -y socat
 RUN apt-get install -y openssh-client
-RUN apt-get install -y openssh 
+RUN apt-get install -y openssl 
 RUN apt-get install -y iotop
 RUN apt-get install -y lsof
 RUN apt-get install -y strace
